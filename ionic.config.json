@@ -1,0 +1,7 @@
+{
+  "name": "servicos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
