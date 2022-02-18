@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>decks</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="success" (click)="initDeck()">
+        INICIAR
+      </ion-button>    
+    </ion-buttons>
+    <ion-title>21!</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button color="primary" (click)="drawOneCard()">
+          Another Card!
+        </ion-button>    
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col size="6" size-md="2" *ngFor="let card of cards; let ix = index" class="ion-text-center">
+        <ion-img [src]="card.image"></ion-img>
+      </ion-col>
+    </ion-row>
 </ion-content>
